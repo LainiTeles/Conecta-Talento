@@ -2,161 +2,219 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
+    
+  <meta charset="utf-8">
 
-    <title>Conecta Talentos | Cadastro</title>
-
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+  <title>Conecta Talentos | Cadastro</title>
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/09b36a73f0.js" crossorigin="anonymous"></script>
+  <link href="css/cadastro.css" rel="stylesheet">
 
 </head>
 
 <body> 
-    Tela de cadastro de perfil e currículo.
+  <nav class="navbar navbar-light">
+    <div class="justify-content-left align-items-left">
+      <i class="fas fa-arrow-left" style="font-size: 22px; color: #ffff;">    </i>
+      <a class="navbar-brand" href="Home.html" style="font-size: 24px; color: #ffff;"> Voltar</a>
+    </div>
+  </nav>
+  
+  </br>
+  </br>
+  </br>
 
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="Home.html">Conecta Talentos</a>
-          <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Home.html">Home</a>
-              </li>
-              <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Entrar.html">Entrar</a>
-              </li>
-            </ul>
+  <div class="container">
+    <div class="row justify-content-center ">
+
+      <form class="px-4 py-3">
+        <h3 class="text-center">CADASTRE-SE</h3>
+        <hr class="style1">
+
+        <div class="form-group row">
+          <label class="col-sm col-form-label">Nome Completo</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control">
           </div>
         </div>
-    </nav> 
 
-    <section class="page-section" id="cadastro">
-        <div class="container">
-    
-          <!-- Contact Section Heading -->
-          <br />
-          <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Cadastre-se</h2>
-    
-          <!-- Icon Divider -->
-          <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="divider-custom-line"></div>
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">CPF</label>
+          <div class="col-sm-12">
+            <input type="number" class="form-control" placeholder="000.000.000-00">
           </div>
-    
-          <!-- Contact Section Form -->
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-              <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                <div class="control-group">
-                  <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                    <label>Nome Completo</label>
-                    <input class="form-control" id="name" type="text" placeholder="Nome Completo" required="required" data-validation-required-message="Por favor, insira seu nome.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                      <label>CPF</label>
-                      <input class="form-control" id="cpf" type="number" placeholder="CPF" required="required" data-validation-required-message="Por favor, insira seu cpf.">
-                      <p class="help-block text-danger"></p>
-                    </div>
-                  </div>
-                <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                      <label>Data de Nascimento</label>
-                      <input class="form-control" id="nascimento" type="number" placeholder="Data de Nascimento" required="required" data-validation-required-message="Por favor, insira sua data.">
-                      <p class="help-block text-danger"></p>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                      <label>Genero: </label>
-                      <input class="form-control" id="gener" type="checkbox" value="fem" placeholder="Genero" required="required" > Feminino
-                      <input class="form-control" id="gener" type="checkbox" value="mas" placeholder="Genero" required="required" > Masculino
-                      <p class="help-block text-danger"></p>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                      <label>Endereço</label>
-                      <input class="form-control" id="local" type="text" placeholder="Endereço" required="required" data-validation-required-message="Por favor, insira seu endereço.">
-                      <p class="help-block text-danger"></p>
-                    </div>
-                </div>
-                <div class="control-group">
-                  <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                    <label>Email</label>
-                    <input class="form-control" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Por favor, insira seu email.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                    <label>Telefone</label>
-                    <input class="form-control" id="telefone" type="number" placeholder="Telefone" required="required" data-validation-required-message="Por favor, insira uma senha.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                      <label>Escolaridade</label>
-                      <input class="form-control" id="esc" type="checkbox" placeholder="Escolaridade" required="required" > Fundamental
-                      <input class="form-control" id="esc" type="checkbox" placeholder="Escolaridade" required="required" > Médio
-                      <input class="form-control" id="esc" type="checkbox" placeholder="Escolaridade" required="required" > Graduaçao
-                      <input class="form-control" id="esc" type="checkbox" placeholder="Escolaridade" required="required" > Pos-Graduaçao
-                      <p class="help-block text-danger"></p>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                      <label>Situaçao de Emprego</label>
-                      <input class="form-control" id="sit" type="checkbox" placeholder="Situaçao de Emprego" required="required" > Empregado
-                      <input class="form-control" id="sit" type="checkbox" placeholder="Situaçao de Emprego" required="required" > Autonomo
-                      <input class="form-control" id="sit" type="checkbox" placeholder="Situaçao de Emprego" required="required" > Desempregado
-                      <input class="form-control" id="sit" type="checkbox" placeholder="Situaçao de Emprego" required="required" > Estudante
-                      <p class="help-block text-danger"></p>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                      <label>Area de Interesse</label>
-                      <input class="form-control" id="area" type="checkbox" placeholder="Area de Interesse" required="required" > Humanas
-                      <input class="form-control" id="area" type="checkbox" placeholder="Area de Interesse" required="required" > Exatas
-                      <input class="form-control" id="area" type="checkbox" placeholder="Area de Interesse" required="required" > Biologicas
-                      <input class="form-control" id="area" type="checkbox" placeholder="Area de Interesse" required="required" > Saúde
-                      <input class="form-control" id="area" type="checkbox" placeholder="Area de Interesse" required="required" > Tecnológica
-                      <p class="help-block text-danger"></p>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                      <label>Curriculo</label>
-                      <input class="form-control" id="currículo" type="file" placeholder="Currículo" required="required" ">
-                      <p class="help-block text-danger"></p>
-                    </div>
-                </div> <br />
-                <div id="success"></div>
-                <div class="form-group">
-                  <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Cadastrar</button>
-                </div>
-              </form>
-            </div>
-          </div>
-    
         </div>
-    </section>
+
+        <div class="form-group row">
+          <label class="col-sm col-form-label">Data de Nascimento</label>
+          <div class="col-sm-12">
+            <input type="date" class="form-control" placeholder="dd/mm/aaaa">
+          </div>
+        </div>
+
+        <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">Gênero</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" value="F" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Feminino
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" value="M">
+              <label class="form-check-label" for="gridRadios2">
+                Masculino
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" value="O">
+              <label class="form-check-label" for="gridRadios3">
+                Outro
+              </label>
+            </div>
+          </div>
+        </div>
+        </fieldset>
+
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Endereço</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="inputAddress" placeholder="Rua">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="form-group col-sm-6">
+            <input type="number" class="form-control" placeholder="Número">
+          </div>
+          <div class="form-group col-sm-6">
+            <input type="text" class="form-control" placeholder="Bairro">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="inputCity" placeholder="Cidade">
+          </div>
+          <div class="form-group col-md-6">
+            <select id="inputState" class="form-control">
+              <option selected>Estado</option>
+              <option>RN</option>
+              <option>RJ</option>
+              <option>BA</option>
+              <option>BA</option>
+            </select>
+          </div>
+        </div>
+        <hr class="style2">
+
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-12">
+            <input type="email" class="form-control" placeholder="nome@exemplo.com">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Telefone</label>
+          <div class="col-sm-12">
+            <input type="tel" class="form-control" placeholder="(00) 0000-0000">
+          </div>
+        </div>
+        <hr class="style2">
+
+        <div class="form-group row">
+          <div class="form-group col-md-12">
+            <label>Escolaridade</label>
+            <select class="form-control">
+              <option selected>Selecione</option>
+              <option>Ens. Fundamental</option>
+              <option>Ens. Médio</option>
+              <option>Graduação</option>
+              <option>Pós-Graduação</option>
+            </select>
+          </div>
+          <div class="form-group col-md-12">
+            <label>Situação de Empregabilidade</label>
+            <select class="form-control">
+              <option selected>Selecione</option>
+              <option>Empregado</option>
+              <option>Autônomo</option>
+              <option>Estudante</option>
+              <option>Desempregado</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-group row col-sm">Área de Interesse</div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Humanas
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Exatas
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Biológicas
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Tecnológicas
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-group">Enviar Currículo</label>
+            <div class="custom-file col-md-12">
+              <label class="custom-file-label" for="customFile">Procurar arquivo</label>
+              <input type="file" class="custom-file-input">
+              </br>
+            </div>
+          </div>
+          <hr class="style2">
+
+          <div class="form-group row">
+            <label class="col-sm col-form-label">Usuário</label>
+            <div class="col-sm-12">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+  
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Senha</label>
+            <div class="col-sm-12">
+              <input type="password" class="form-control">
+            </div>
+          </div>
+          <hr class="style2">
+
+          <div class="form-group" >
+            <button type="submit" class="btn" style="background-color: #c6e466;">Cadastrar</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+  </br>
+  </br>
+  </br>
 
 </body>
 </html>
